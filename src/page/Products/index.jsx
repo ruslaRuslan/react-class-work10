@@ -29,7 +29,7 @@ const ProductsPage = () => {
   return(
     <div>
         <button onClick={deleteFirst}>delete first product</button>
-        
+        <button onClick={deleteIphones}>delete iphones</button>
     </div>
   )
 
