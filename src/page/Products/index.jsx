@@ -15,10 +15,13 @@ const ProductsPage = () => {
   const handleDelete = (id) => {
     dispatch({ type: "deleteproduct", payload: id });
   }
+const handleEdit = (id)=>{
+    dispatch({type:'editproduct', payload: id})
+}
 
 
 
 
 
-  
+
 };
