@@ -31,13 +31,15 @@ const ProductsPage = () => {
       <button onClick={deleteFirst}>delete first product</button>
       <button onClick={deleteIphones}>delete iphones</button>
       {products.map(({ id, title }) => {
-        return <div key={id}>
-<h1>{title}
-<button onClick={()=> handleEdit(id)}>🖊</button>
-<button onClick={()=> handleDelete(id)}>❌</button>
-
-</h1>
-        </div>;
+        return (
+          <div key={id}>
+            <h1>
+              {title}
+              <button onClick={() => handleEdit(id)}>🖊</button>
+              <button onClick={() => handleDelete(id)}>❌</button>
+            </h1>
+          </div>
+        );
       })}
     </div>
   );
