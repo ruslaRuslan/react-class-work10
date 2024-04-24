@@ -21,4 +21,8 @@ const ProductsPage = () => {
   const deleteFirst = () => {
     dispatch({ type: "deletefirst" });
   };
+
+  const deleteIphones = ()=>{
+    dispatch({type:'deleteiphones'})
+  }
 };
