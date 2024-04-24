@@ -10,14 +10,15 @@ const ProductsPage = () => {
     axios.get(url).then(({ data }) => {
       dispatch({ type: "getproducts", payload: data.products });
     });
-  },[]);
+  }, []);
+
+  const handleDelete = (id) => {
+    dispatch({ type: "deleteproduct", payload: id });
+  }
 
 
 
 
 
-
-
-
-
+  
 };
