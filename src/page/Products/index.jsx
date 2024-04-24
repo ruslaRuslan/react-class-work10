@@ -34,6 +34,8 @@ const ProductsPage = () => {
         return <div key={id}>
 <h1>{title}
 <button onClick={()=> handleEdit(id)}>🖊</button>
+<button onClick={()=> handleDelete(id)}>❌</button>
+
 </h1>
         </div>;
       })}
