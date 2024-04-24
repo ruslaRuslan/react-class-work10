@@ -22,7 +22,15 @@ const ProductsPage = () => {
     dispatch({ type: "deletefirst" });
   };
 
-  const deleteIphones = ()=>{
-    dispatch({type:'deleteiphones'})
-  }
+  const deleteIphones = () => {
+    dispatch({ type: "deleteiphones" });
+  };
+
+  return(
+    <div>
+        <button onClick={deleteFirst}>delete first product</button>
+        
+    </div>
+  )
+
 };
