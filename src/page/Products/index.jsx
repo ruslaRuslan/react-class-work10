@@ -26,11 +26,17 @@ const ProductsPage = () => {
     dispatch({ type: "deleteiphones" });
   };
 
-  return(
+  return (
     <div>
-        <button onClick={deleteFirst}>delete first product</button>
-        <button onClick={deleteIphones}>delete iphones</button>
+      <button onClick={deleteFirst}>delete first product</button>
+      <button onClick={deleteIphones}>delete iphones</button>
+      {products.map(({ id, title }) => {
+        return <div key={id}>
+<h1>{title}
+<button onClick={()=> handleEdit(id)}>🖊</button>
+</h1>
+        </div>;
+      })}
     </div>
-  )
-
+  );
 };
