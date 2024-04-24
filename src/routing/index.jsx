@@ -4,6 +4,7 @@ import About from "../page/About";
 import Contact from "../page/Contact/";
 import UsersWithStatePage from "../page/UsersWithStatePage";
 import UsersWithReducerPage from "../page/UsersWithReducerState";
+import ProductsPage from "../page/Products";
 
 const Routing = () => {
   return (
@@ -14,7 +15,7 @@ const Routing = () => {
         <Route path="/contact" element={<Contact />} />
         <Route path="/users-state" element={<UsersWithStatePage />} />
         <Route path="/users-reducer" element={<UsersWithReducerPage />} />
-        {/* <Route path="/products" element={<ProductsPage />} /> */}
+        <Route path="/products" element={<ProductsPage />} />
 
       </Routes>
     </>
