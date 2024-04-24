@@ -11,5 +11,9 @@ const productReducer = (products, action) =>{
                 }
                 return product
             })
+            case'deletefirst':
+            return products.slice(1)
+            case'deleteiphones':
+            return products.filter((product)=> !product.toLowerCase().startWith('iphone'))
     }
 }
