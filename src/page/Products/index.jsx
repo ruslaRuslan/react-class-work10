@@ -1,6 +1,6 @@
 import axios from "axios";
 import { useEffect, useReducer } from "react";
-import productReducer from "../../reducers/productReducer"
+import productReducer from "../../reducers/productReducer";
 const url = "https://dummyjson.com/products";
 
 const ProductsPage = () => {
@@ -43,4 +43,4 @@ const ProductsPage = () => {
     </div>
   );
 };
-export default ProductsPage
+export default ProductsPage;
